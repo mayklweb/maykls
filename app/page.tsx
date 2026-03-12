@@ -1,73 +1,43 @@
 "use client";
-import gsap from "gsap";
-import { useEffect } from "react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { SplitText } from "gsap/SplitText";
 
-gsap.registerPlugin(ScrollTrigger, SplitText);
+import { useState } from "react";
+import LoadingScreen from "@/components/LoadingScreen"; // adjust path if needed
 
 export default function Home() {
-  useEffect(() => {
-    gsap.set(".text", { opacity: 1, y: 0 });
+  const [loaded, setLoaded] = useState(false);
 
-    const split = new SplitText(".text", {
-      type: "lines",
-      linesClass: "lines",
-      autoSplit: true,
-      mask: "lines",
-    });
-
-    gsap.from(split.lines, {
-      y: 100,
-      duration: 1,
-      ease: "power3.out",
-      stagger: 0.1,
-      scrollTrigger: {
-        trigger: ".text",
-        start: "top bottom",
-        toggleActions: "play none none none",
-      },
-    });
-
-    // return () => {
-    //   ScrollTrigger.getAll().forEach((t) => t.kill());
-    // };
-  }, []);
   return (
     <>
-      {/* <div className="w-full h-full"> */}
+      <LoadingScreen onComplete={() => setLoaded(true)} />
 
-      {/* </div> */}
-      <div className="w-full h-auto lg:h-[calc(100vh-40px)] flex flex-col p-4">
-        <div className="w-full h-auto lg:h-2/3 flex flex-col justify-center mt-40 lg:mt-0">
-          <h1 className="text-lg lg:text-4xl tracking-tight font-medium font-sans text">
+      <div
+        className="w-full h-full"
+        style={{
+          opacity: loaded ? 1 : 0,
+          transition: "all 0.1s ease-in-out",
+        }}
+      >
+        {/* <div className="flex items-center justify-around">
+          <button className="text-white bg-primary">about</button>
+          <button className="text-white bg-primary">work</button>
+          <button className="text-white bg-primary">services</button>
+          <button className="text-white bg-primary">contact</button>
+        </div>
+        <div>
+          <p className="text-[#E00000] text-2xl">
             I’m a curious and creative soul who loves turning ideas into
             reality. I enjoy exploring my imagination and creating projects that
             truly reflect my style. I’m always learning, growing, and looking
             for new ways to challenge myself. Outside of work, I enjoy
             exploring, finding inspiration in everyday life, and connecting with
             people who spark my curiosity.
-          </h1>
-        </div>
-        <div className="w-full h-auto lg:h-1/3 grid grid-cols-1 lg:grid-cols-2 gap-20 my-20 lg:my-0">
-          <div className="flex flex-col gap-2.5">
-            <h3 className="tracking-tight font-serif font-black text">
-              {"{PROJECTS}"}
-            </h3>
-            <div className="">
-              <p className=" font-sans tracking-tight text">Bunyod House</p>
-              <p className=" font-sans tracking-tight text">Bunyod Optom</p>
-            </div>
-          </div>
-          <div className="flex flex-col gap-2.5">
-            <h3 className="tracking-tight font-serif font-black text">
-              {"{SERVICES}"}
-            </h3>
-            <div className="">
-              <p className=" font-sans tracking-tight text">Website Design</p>
-              <p className=" font-sans tracking-tight text">Web Development</p>
-            </div>
-          </div>
+          </p>
+        </div> */}
+        <div className="w-full h-ful">
+          <video autoPlay muted className="w-auto h-screen">
+          <source src="/hero.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         </div>
       </div>
     </>

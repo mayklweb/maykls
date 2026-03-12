@@ -27,7 +27,7 @@ const Noise = ({
       canvas.width = canvasSize;
       canvas.height = canvasSize;
 
-      canvas.style.width = '100vw';
+      canvas.style.width = '100vw ';
       canvas.style.height = '100vh';
     };
 
@@ -64,7 +64,7 @@ const Noise = ({
     };
   }, [patternSize, patternScaleX, patternScaleY, patternRefreshInterval, patternAlpha]);
 
-  return <canvas className="noise-overlay" ref={grainRef} style={{ imageRendering: 'pixelated' }} />;
+  return <canvas className="noise-overlay" ref={grainRef} style={{ imageRendering: 'pixelated', height: "100vh" }} />;
 };
 
 export default Noise;
