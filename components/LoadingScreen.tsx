@@ -37,14 +37,16 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
   const elapsed = useRef(0);
 
   // Preload all images before cycling starts
-  // Start cycling immediately with whatever images are cached
   useEffect(() => {
-    // Kick off preload in background (no gate)
+    let loaded = 0;
     IMAGES.forEach((src) => {
       const img = new window.Image();
       img.src = src;
+      img.onload = img.onerror = () => {
+        loaded++;
+        if (loaded === Math.min(3, IMAGES.length)) setReady(true);
+      };
     });
-    setReady(true); // start right away
   }, []);
 
   // Start cycling only after preload
@@ -66,6 +68,8 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
 
     return () => clearInterval(id);
   }, [ready, onComplete]);
+
+  
 
   return (
     <div
