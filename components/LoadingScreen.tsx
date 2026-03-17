@@ -69,8 +69,6 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
     return () => clearInterval(id);
   }, [ready, onComplete]);
 
-  
-
   return (
     <div
       className={`w-screen h-screen flex items-center justify-center fixed bg-black transition-opacity duration-500 linear `}
@@ -85,23 +83,23 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
       }}
     >
       <div className="relative w-25 h-25 lg:w-50 lg:h-50">
-        {IMAGES.slice(current, current + 2).map((src, i) => (
-          <div
-            key={`${src}-${i}`}
-            className={`absolute top-0 left-0 w-25 h-25 lg:w-50 lg:h-50 transition-opacity duration-75 linear `}
-            style={{
-              opacity: i === current ? 1 : 0,
-            }}
-          >
-            <Image
-              src={src}
-              alt=""
-              width={200}
-              height={200}
-              className="grayscale w-full h-full object-cover"
-            />
-          </div>
-        ))}
+        {[IMAGES[current], IMAGES[(current + 1) % IMAGES.length]].map(
+          (src, i) => (
+            <div
+              key={src}
+              className="absolute top-0 left-0 w-25 h-25 lg:w-50 lg:h-50 transition-opacity duration-75"
+              style={{ opacity: i === 0 ? 1 : 0 }}
+            >
+              <Image
+                src={src}
+                alt=""
+                width={200}
+                height={200}
+                className="grayscale w-full h-full object-cover"
+              />
+            </div>
+          ),
+        )}
       </div>
     </div>
   );
