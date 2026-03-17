@@ -37,16 +37,14 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
   const elapsed = useRef(0);
 
   // Preload all images before cycling starts
+  // Start cycling immediately with whatever images are cached
   useEffect(() => {
-    let loaded = 0;
+    // Kick off preload in background (no gate)
     IMAGES.forEach((src) => {
       const img = new window.Image();
       img.src = src;
-      img.onload = img.onerror = () => {
-        loaded++;
-        if (loaded === IMAGES.length) setReady(true);
-      };
     });
+    setReady(true); // start right away
   }, []);
 
   // Start cycling only after preload
@@ -71,17 +69,22 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
 
   return (
     <div
-      className={`w-screen h-screen flex items-center justify-center fixed z-9999 bg-black transition-all duration-500 linear `}
+      className={`w-screen h-screen flex items-center justify-center fixed bg-black transition-opacity duration-500 linear `}
+      // style={{
+      //   opacity: done ? 0 : 1,
+      //   visibility: done ? "hidden" : "visible",
+      // }}
       style={{
+        zIndex: 9999,
         opacity: done ? 0 : 1,
         visibility: done ? "hidden" : "visible",
       }}
     >
       <div className="relative w-25 h-25 lg:w-50 lg:h-50">
-        {IMAGES.map((src, i) => (
+        {IMAGES.slice(current, current + 2).map((src, i) => (
           <div
             key={`${src}-${i}`}
-            className={`absolute top-0 left-0 w-25 h-25 lg:w-50 lg:h-50 transition-all duration-75 linear `}
+            className={`absolute top-0 left-0 w-25 h-25 lg:w-50 lg:h-50 transition-opacity duration-75 linear `}
             style={{
               opacity: i === current ? 1 : 0,
             }}
