@@ -17,7 +17,10 @@ export default function Home() {
             visibility: loaded ? "visible" : "hidden",
             transition: "opacity  0.1s ease-in-out",
           }}
-        ></div>
+        >
+
+          <h1 className="text-primary">GEY</h1>
+        </div>
       )}
     </>
   );
