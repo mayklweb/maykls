@@ -1,24 +1,10 @@
 import React from "react";
 import "./globals.css";
-import {
-  Sometype_Mono,
-  Instrument_Sans,
-  Instrument_Serif,
-} from "next/font/google";
+import { Special_Elite } from "next/font/google";
 
-const sometypeMono = Sometype_Mono({
-  variable: "--font-sometype-mono",
-  subsets: ["latin"],
-});
-const instrumentSans = Instrument_Sans({
-  variable: "--font-instrument-sans",
-  subsets: ["latin"],
-});
-
-const instrumentSerif = Instrument_Serif({
+const specialElite = Special_Elite({
+  variable: "--font-special-elite",
   weight: "400",
-  variable: "--font-instrument-serif",
-  subsets: ["latin"],
 });
 
 export const metadata = {
@@ -37,9 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className={`${sometypeMono.variable} ${instrumentSans.variable} ${instrumentSerif.variable} antialiased`}
-      >
+      <body className={`${specialElite.variable}  antialiased`}>
         <main className="w-full h-full">{children}</main>
       </body>
     </html>

@@ -1,11 +1,14 @@
+@import url(https://fonts.googleapis.com/css?family=Special+Elite:400);
 @import "tailwindcss";
 
 :root {
-  --background: #FDF9F2;
-  --foreground: #002BBA;
-  --primary: #002BBA;
-  --secondry: #FDF9F2;
-  
+  --backgroud-color: #000000;
+  --foreground-color: #fff9e9;
+  --background: #fdf9f2;
+  --foreground: #fff9e9;
+  --primary: #002bba;
+  --secondry: #fdf9f2;
+  --font-mono: "Special Elite", monospace;
 }
 
 @theme inline {
@@ -13,20 +16,18 @@
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
   --color-secondry: var(--secondry);
-  --font-mono: var(--font-sometype-mono);
-  --font-sans: var(--font-instrument-sans);
-  --font-serif: var(--font-instrument-serif);
+  --font-mono: var(--font-special-elite);
 }
 
-html{
+html {
   width: 100%;
   height: 100%;
 }
 
 body {
-  width: 100%; 
+  width: 100%;
   height: 100%;
-  background: black;
-  /* color: var(--foreground); */
-  /* font-family: var(--font-mono); */
+  background-color: var(--backgroud-color);
+  color: var(--primary);
+  font-family: var(--font-mono);
 }
