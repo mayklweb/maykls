@@ -7,20 +7,20 @@ export default function Home() {
 
   return (
     <div className="w-full h-full p-2.5">
-      <div className="w-full h-full flex items-center">
-        <div className="w-1/2 flex flex-col justify-center">
-          <div className="w-full">
+      <div className="w-full h-full flex flex-col justify-center lg:items-center gap-10">
+        <div className="w-full lg:w-1/2 flex flex-col justify-center">
+          <div className="w-full ">
             <p className="text-xs">
               /Minimal Web, E-commerce and Shopify Designer.
             </p>
-            <p className="text-xs">
+            <p className="text-xs mt-2">
               Harmony between aesthetics, usability, and conversion.
             </p>
           </div>
         </div>
-        <div className="w-1/2 h-full flex items-center">
+        <div className="w-full lg:w-1/2  flex ">
           <div className="w-full flex">
-            <div className="w-1/2 text-xs col-span-2 md:col-span-1">
+            <div className="w-1/2 text-xs">
               /Services
               <br />
               <br /> Shopify Design
@@ -29,7 +29,7 @@ export default function Home() {
               <br /> Website Design
               <br />
             </div>
-            <div className="w-1/2 text-xs col-span-2 md:col-span-1">
+            <div className="w-1/2 text-xs">
               <div className="flex gap-1 flex-col items-baseline">
                 <a className="underline" href="">
                   About
@@ -48,6 +48,45 @@ export default function Home() {
                 </a>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="h-screen flex flex-col justify-center pb-20 sm:pb-[70px] -mb-[60px] sm:-mb-[50px]">
+        <div className="grid grid-cols-4 gap-5 ">
+          <div className="col-span-4 mb-5 md:col-span-2 max-w-md">
+            /Minimal Web, E-commerce and Shopify Designer.
+            <br /> Harmony between aesthetics, usability, and conversion.
+          </div>
+          <div className="col-span-2 md:col-span-1">
+            {" "}
+            /Services
+            <br /> <br /> Shopify Design
+            <br /> Shopify Development
+            <br /> E-Commerce Design
+            <br /> Website Design
+            <br /> <br /> <br />
+          </div>
+          <div className="col-span-2 md:col-span-1 flex flex-col items-baseline">
+            {" "}
+            <a
+              className="underline mb-2"
+              href="https://6l1q5xoi1mt.typeform.com/to/AkhHZvBh"
+              title="Submit an Inquiry"
+              target=""
+            >
+              {" "}
+              Submit an Inquiry{" "}
+            </a>{" "}
+            <a
+              className="underline mb-2"
+              href="mailto:basia.skrodzka@gmail.com"
+              title="Contact"
+              target="_blank"
+            >
+              {" "}
+              Contact{" "}
+            </a>
           </div>
         </div>
       </div>
