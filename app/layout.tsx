@@ -29,7 +29,17 @@ export default function RootLayout({
           {/* <button className="text-xs">Inquiry</button> */}
         </header>
         <main className="w-full h-[calc(100%-40px)]">{children}</main>
-        <footer></footer>
+        <footer className="p-2.5">
+          <div className="text-[10px]"> Designing for a better harmonious world.</div>
+          <div className="mt-1.5 flex justify-between">
+            <div className="text-[10px] flex gap-2">
+              <a href="">Instagram</a>
+              <a href="">LinkedIn</a>
+              <a href="">GitHub</a>
+            </div>
+            <p className="text-[10px]"> © 2025 Khuranboyev Muhammad</p>
+          </div>
+        </footer>
       </body>
     </html>
   );
