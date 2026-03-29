@@ -52,7 +52,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="h-screen flex flex-col justify-center pb-20 sm:pb-[70px] -mb-[60px] sm:-mb-[50px]">
+      {/* <div className="h-screen flex flex-col justify-center pb-20 sm:pb-[70px] -mb-[60px] sm:-mb-[50px]">
         <div className="grid grid-cols-4 gap-5 ">
           <div className="col-span-4 mb-5 md:col-span-2 max-w-md">
             /Minimal Web, E-commerce and Shopify Designer.
@@ -89,7 +89,7 @@ export default function Home() {
             </a>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* <div className="w-full h-full flex relative">
         <div className="w-1/2">
