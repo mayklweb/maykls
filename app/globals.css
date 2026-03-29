@@ -36,8 +36,8 @@ body {
   z-index: 9999;
   pointer-events: none;
   user-select: none;
-  width: calc(200% + 20rem);
-  height: calc(200% + 20rem);
+  width: calc(200svw + 20rem);
+  height: calc(200svh + 20rem);
   position: fixed;
   top: -10rem;
   left: -10rem;
