@@ -36,7 +36,7 @@ export default function RootLayout({
             Designing for a better harmonious world.
           </div>
           <div className="mt-1.5 flex justify-between">
-            <div className="text-[10px] flex gap-2">
+            <div className="text-[10px] flex gap-3">
               <a href="">Instagram</a>
               <a href="">LinkedIn</a>
               <a href="">GitHub</a>
