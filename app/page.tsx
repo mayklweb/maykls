@@ -7,7 +7,7 @@ export default function Home() {
 
   return (
     <div className="w-full h-full p-5">
-      <div className="w-full h-full flex flex-col justify-center lg:items-center gap-10">
+      <div className="w-full h-full flex flex-col lg:flex-row justify-center lg:items-center gap-10">
         <div className="w-full lg:w-1/2 flex flex-col justify-center">
           <div className="w-full ">
             <p className="text-xs">
@@ -19,7 +19,7 @@ export default function Home() {
           </div>
         </div>
         <div className="w-full lg:w-1/2 flex">
-          <div className="w-full flex flex-col gap-10">
+          <div className="w-full flex flex-col lg:flex-row gap-10">
             <div className="w-1/2 text-xs">
               /Services
               <br />
