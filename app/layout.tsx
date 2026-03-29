@@ -24,7 +24,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${specialElite.variable}  antialiased`}>
-        <main className="w-full h-full">{children}</main>
+        <header className="w-full p-2.5 flex justify-between">
+          <h1 className="text-sm">Khuranboyev Muhammad</h1>
+          <button className="text-xs">Inquiry</button>
+        </header>
+        <main className="w-full h-[calc(100%-40px)]">{children}</main>
+        <footer></footer>
       </body>
     </html>
   );

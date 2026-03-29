@@ -2,7 +2,7 @@
 @import "tailwindcss";
 
 :root {
-  --backgroud-color: #000000;
+  --backgroud-color: #ede6da;
   --foreground-color: #fff9e9;
   --background: #fdf9f2;
   --foreground: #fff9e9;
@@ -30,4 +30,5 @@ body {
   background-color: var(--backgroud-color);
   color: var(--primary);
   font-family: var(--font-mono);
+  /* line-height: %; */
 }
