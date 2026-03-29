@@ -26,7 +26,7 @@ export default function RootLayout({
       <body className={`${specialElite.variable}  antialiased`}>
         <header className="w-full p-2.5 flex justify-between">
           <h1 className="text-sm">Khuranboyev Muhammad</h1>
-          <button className="text-xs">Inquiry</button>
+          {/* <button className="text-xs">Inquiry</button> */}
         </header>
         <main className="w-full h-[calc(100%-40px)]">{children}</main>
         <footer></footer>
