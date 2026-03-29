@@ -28,7 +28,7 @@ export default function RootLayout({
           <h1 className="text-sm">Khuranboyev Muhammad</h1>
           {/* <button className="text-xs">Inquiry</button> */}
         </header>
-        <main className="w-full h-[calc(100%-40px)]">{children}</main>
+        <main className="w-full h-[calc(100%-96px)]">{children}</main>
         <footer className="p-2.5">
           <div className="text-[10px]"> Designing for a better harmonious world.</div>
           <div className="mt-1.5 flex justify-between">
