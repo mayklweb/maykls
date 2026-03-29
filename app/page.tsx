@@ -18,8 +18,8 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="w-full lg:w-1/2  flex ">
-          <div className="w-full flex">
+        <div className="w-full lg:w-1/2 flex">
+          <div className="w-full flex flex-col gap-10">
             <div className="w-1/2 text-xs">
               /Services
               <br />
@@ -30,7 +30,7 @@ export default function Home() {
               <br />
             </div>
             <div className="w-1/2 text-xs">
-              <div className="flex gap-1 flex-col items-baseline">
+              <div className="flex gap-1 flex-col ">
                 <a className="underline" href="">
                   About
                 </a>
