@@ -2,7 +2,7 @@
 @import "tailwindcss";
 
 :root {
-  --backgroud-color: #ede6da;
+  --background-color: #ede6da;
   --foreground-color: #fff9e9;
   --background: #fdf9f2;
   --foreground: #111111;
@@ -27,7 +27,7 @@ html {
 body {
   width: 100svw;
   height: 100svh;
-  background-color: var(--backgroud-color);
+  background-color: var(--background);
   color: var(--foreground);
   font-family: var(--font-mono);
 }
