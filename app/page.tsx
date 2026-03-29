@@ -30,7 +30,7 @@ export default function Home() {
               <br />
             </div>
             <div className="w-1/2 text-xs">
-              <div className="flex gap-1 flex-col ">
+              <div className="flex gap-2 flex-col ">
                 <a className="underline" href="">
                   About
                 </a>
