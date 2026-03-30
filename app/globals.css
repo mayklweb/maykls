@@ -5,7 +5,7 @@
   --background-color: #ede6da;
   --foreground-color: #fff9e9;
   --background: #fdf9f2;
-  --foreground: #111111;
+  --foreground: rgba(0, 0, 0, 0.7);
   --primary: #002bba;
   --secondry: #fdf9f2;
   --font-mono: "Special Elite", monospace;
@@ -41,9 +41,9 @@ body {
   position: fixed;
   top: -10rem;
   left: -10rem;
-  opacity: 0.15;
+  opacity: 0.1;
   mix-blend-mode: multiply;
-  background-image: url("https://www.aupalevodka.com/gaussian-noise.png");
+  background-image: url("/noise.webp");
   animation: noise-animation 0.5s steps(2, end) infinite;
 }
 
