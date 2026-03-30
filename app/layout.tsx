@@ -1,6 +1,7 @@
 import React from "react";
 import "./globals.css";
 import { Special_Elite } from "next/font/google";
+import Link from "next/link";
 
 const specialElite = Special_Elite({
   variable: "--font-special-elite",
@@ -26,7 +27,9 @@ export default function RootLayout({
       <body className={`${specialElite.variable}  antialiased`}>
         <div className="noise"></div>
         <header className="w-full p-5 flex justify-between">
-          <h1 className="text-sm">Khuranboyev Muhammad</h1>
+          <Link href="/" className="text-sm">
+            Linkanboyev Muhammad
+          </Link>
           {/* <button className="text-xs">Inquiry</button> */}
         </header>
         <main className="w-full flex flex-col flex-auto h-auto">
