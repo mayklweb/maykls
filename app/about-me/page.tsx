@@ -27,17 +27,19 @@ function AboutMe() {
           </div>
         </div>
         <div className="">
-          <div className="max-w-90 text-xs">
-            About me I am an independent designer specialising in website,
-            e-commerce and Shopify design. I believe in the harmony between
-            aesthetics and usability, and it is around this philosophy that I
+          <p className="max-w-90 text-xs">
+            About me
+            <br />
+            <br />
+            I am an independent developer specialising in website, e-commerce,
+            and web application development. I believe in the harmony between
+            functionality and usability, and it is around this philosophy that I
             create minimal, unique, and memorable digital projects.
             <br />
             <br />
-            Through design, I aim to inspire and craft experiences that resonate
-            on a deeper level, helping brands build strong, meaningful, and
-            authentic relationships with their customers.
-          </div>
+            Through development, I aim to craft digital experiences that
+            resonate with users, creating meaningful and lasting interactions.
+          </p>
         </div>
       </div>
       <div className="w-full h-[calc(100svh-76px)] flex justify-end items-end">

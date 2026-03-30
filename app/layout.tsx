@@ -9,7 +9,7 @@ const specialElite = Special_Elite({
 });
 
 export const metadata = {
-  title: "Muhammad | maykls — Web Developer and Designer",
+  title: "Khuranboyev Muhammad | maykls — Web Development and Design",
   description:
     "Muhammad is a developer and web designer exploring the space between design and code — crafting digital experiences where logic meets emotion.",
   icons: {
