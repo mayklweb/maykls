@@ -26,34 +26,36 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${specialElite.variable}  antialiased`}>
         <div className="noise"></div>
-        <header className="w-full flex justify-between">
-          <Link href="/" className="text-sm">
-            Khuranboyev Muhammad
-          </Link>
-          {/* <button className="text-xs">Inquiry</button> */}
-        </header>
-        <main className="w-full flex flex-col flex-auto h-auto">
-          {children}
-        </main>
-        <footer>
-          <div className="text-[10px]">
-            Designing for a better harmonious world.
-          </div>
-          <div className="mt-1.5 pb-5 flex justify-between">
-            <div className="text-[10px] flex gap-3">
-              <Link target="_blank" href="https://instagram.com/mayklsss">
-                Instagram
-              </Link>
-              <Link target="_blank" href="/">
-                LinkedIn
-              </Link>
-              <Link target="_blank" href="https://github.com/mayklweb">
-                GitHub
-              </Link>
+        <div className="wrapper">
+          <header className="w-full p-5 flex justify-between">
+            <Link href="/" className="text-sm">
+              Khuranboyev Muhammad
+            </Link>
+            {/* <button className="text-xs">Inquiry</button> */}
+          </header>
+          <main className="w-full p-5 flex flex-col flex-auto">
+            {children}
+          </main>
+          <footer className="p-5">
+            <div className="text-[10px]">
+              Designing for a better harmonious world.
             </div>
-            <p className="text-[10px]"> © 2025 Khuranboyev Muhammad</p>
-          </div>
-        </footer>
+            <div className="mt-1.5 flex justify-between">
+              <div className="text-[10px] flex gap-3">
+                <Link target="_blank" href="https://instagram.com/mayklsss">
+                  Instagram
+                </Link>
+                <Link target="_blank" href="/">
+                  LinkedIn
+                </Link>
+                <Link target="_blank" href="https://github.com/mayklweb">
+                  GitHub
+                </Link>
+              </div>
+              <p className="text-[10px]"> © 2025 Khuranboyev Muhammad</p>
+            </div>
+          </footer>
+        </div>
       </body>
     </html>
   );

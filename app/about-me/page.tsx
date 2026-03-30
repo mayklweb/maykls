@@ -3,9 +3,9 @@ import React from "react";
 
 function AboutMe() {
   return (
-    <div className="w-full flex flex-col">
-      <div className="h-[calc(100svh-96px)] flex flex-col justify-between">
-        <div className="mt-10 mr-5 flex justify-end">
+    <div className="w-full h-full flex flex-col">
+      <div className="w-full h-[calc(100vh-96px)] flex flex-col justify-between">
+        <div className="mt-10 mr-5 flex justify-end ">
           <div className="w-50 lg:w-60">
             <img
               width="234"
@@ -26,7 +26,7 @@ function AboutMe() {
             />
           </div>
         </div>
-        <div>
+        <div className="">
           <div className="max-w-90 text-xs">
             About me I am an independent designer specialising in website,
             e-commerce and Shopify design. I believe in the harmony between
@@ -40,17 +40,13 @@ function AboutMe() {
           </div>
         </div>
       </div>
-      <div className="w-full h-screen">
+      <div className="w-full h-[calc(100vh-76px)] flex justify-end items-end">
         <div className="w-full h-full grid grid-cols-2 lg:grid-cols-3">
           <div className="hidden lg:block"></div>
           <div></div>
           <div className="w-full h-full text-xs flex gap-5 items-center">
-            <Link href="/art-work">
-             / Art Work
-            </Link>
-            <Link href="/art-work">
-              / Contact
-            </Link>
+            <Link href="/art-work">/ Art Work</Link>
+            <Link href="/art-work">/ Contact</Link>
           </div>
         </div>
       </div>
