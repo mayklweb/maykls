@@ -6,7 +6,7 @@ function AboutMe() {
     <div className="w-full flex flex-col">
       <div className="h-[calc(100svh-96px)] flex flex-col justify-between">
         <div className="mt-10 mr-5 flex justify-end">
-          <div className="w-50">
+          <div className="w-50 lg:w-60">
             <img
               width="234"
               height="300"
