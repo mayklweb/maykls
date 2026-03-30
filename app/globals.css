@@ -30,7 +30,7 @@ body {
   height: 100svh;
   color: var(--foreground);
   font-family: var(--font-mono);
-  background-color: var(--background);
+  background-color: var(--background-color);
   display: flex;
   flex-direction: column;
   scroll-behavior: smooth;
