@@ -7,7 +7,7 @@ export default function Home() {
   const [loaded, setLoaded] = useState(false);
 
   return (
-    <div className="w-full h-full p-5">
+    <div className="w-full h-full">
       <div className="w-full h-full flex flex-col lg:flex-row justify-center lg:items-center gap-10">
         <div className="w-full lg:w-1/2 flex flex-col justify-center">
           <div className="w-full ">
