@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 
 export default function Home() {
@@ -31,21 +32,21 @@ export default function Home() {
             </div>
             <div className="w-1/2 text-xs">
               <div className="flex gap-2 flex-col ">
-                <a className="underline" href="">
-                  About
-                </a>
-                <a className="underline" href="">
+                <Link className="underline" href="/about-me">
+                  About me
+                </Link>
+                <Link className="underline" href="/art-work">
                   Art Work
-                </a>
+                </Link>
 
-                <a
+                <Link
                   className="underline"
                   href="mailto:basia.skrodzka@gmail.com"
                   title="Contact"
                   target="_blank"
                 >
                   Contact
-                </a>
+                </Link>
               </div>
             </div>
           </div>
