@@ -36,11 +36,11 @@ export default function RootLayout({
           <main className="w-full p-5 flex flex-col flex-auto">
             {children}
           </main>
-          <footer className="p-5">
-            <div className="text-[10px]">
-              Designing for a better harmonious world.
+          <footer className="flex flex-col lg:flex-row gap-2 p-5">
+            <div className="w-full block text-[10px]">
+              Development for a better harmonious world.
             </div>
-            <div className="mt-1.5 flex justify-between">
+            <div className="w-full flex flex-row lg:flex-row-reverse justify-between">
               <div className="text-[10px] flex gap-3">
                 <Link target="_blank" href="https://instagram.com/mayklsss">
                   Instagram

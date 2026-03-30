@@ -11,9 +11,7 @@ export default function Home() {
       <div className="w-full h-full flex flex-col lg:flex-row justify-center lg:items-center gap-10">
         <div className="w-full lg:w-1/2 flex flex-col justify-center">
           <div className="w-full ">
-            <p className="text-xs">
-              /Minimal Web, E-commerce and Shopify Designer.
-            </p>
+            <p className="text-xs">/Minimal Web, Development and Design.</p>
             <p className="text-xs mt-2">
               Harmony between aesthetics, usability, and conversion.
             </p>
@@ -24,11 +22,9 @@ export default function Home() {
             <div className="w-1/2 text-xs">
               /Services
               <br />
-              <br /> Shopify Design
-              <br /> Shopify Development
-              <br /> E-Commerce Design
+              <br /> E-Commerce
               <br /> Website Design
-              <br />
+              <br /> Web Development
             </div>
             <div className="w-1/2 text-xs">
               <div className="flex gap-2 flex-col ">
