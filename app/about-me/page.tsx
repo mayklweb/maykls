@@ -110,10 +110,10 @@ function AboutMe() {
             <a
               className="hover:italic mr-5 mb-4 md:mb-0 js-nav-hover-target"
               data-target="projects"
-              href="https://bskrodzka.com/"
-              title="/Projects"
+              href="/art-work"
+              title="/Art Work"
             >
-              /Projects
+              /Art Work
             </a>
             <a
               className="hover:italic mr-5 mb-4 md:mb-0 js-nav-hover-target"

@@ -41,9 +41,15 @@ export default function RootLayout({
           </div>
           <div className="mt-1.5 flex justify-between">
             <div className="text-[10px] flex gap-3">
-              <a href="">Instagram</a>
-              <a href="">LinkedIn</a>
-              <a href="">GitHub</a>
+              <Link target="_blank" href="https://instagram.com/mayklsss">
+                Instagram
+              </Link>
+              <Link target="_blank" href="/">
+                LinkedIn
+              </Link>
+              <Link target="_blank" href="https://github.com/mayklweb">
+                GitHub
+              </Link>
             </div>
             <p className="text-[10px]"> © 2025 Khuranboyev Muhammad</p>
           </div>
