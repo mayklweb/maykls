@@ -9,7 +9,7 @@ const specialElite = Special_Elite({
 });
 
 export const metadata = {
-  title: "Khuranboyev Muhammad | maykls — Web Development and Design",
+  title: "Quranbaev Muhammad | maykls — Web Development and Design",
   description:
     "Muhammad is a developer and web designer exploring the space between design and code — crafting digital experiences where logic meets emotion.",
   icons: {
@@ -29,7 +29,7 @@ export default function RootLayout({
         <div className="wrapper">
           <header className="w-full p-5 flex justify-between">
             <Link href="/" className="text-sm">
-              Khuranboyev Muhammad
+              Quranbaev Muhammad
             </Link>
             {/* <button className="text-xs">Inquiry</button> */}
           </header>
@@ -52,7 +52,7 @@ export default function RootLayout({
                   GitHub
                 </Link>
               </div>
-              <p className="text-[10px]"> © 2025 Khuranboyev Muhammad</p>
+              <p className="text-[10px]"> © 2025 Quranbaev Muhammad</p>
             </div>
           </footer>
         </div>
