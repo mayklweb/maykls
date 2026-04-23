@@ -27,7 +27,7 @@ export default function RootLayout({
       <body className={`${specialElite.variable}  antialiased`}>
         <div className="noise"></div>
         <div className="wrapper">
-          <header className="w-full p-5 flex justify-between">
+          <header className="w-full p-5 flex justify-between text-[#ffffffcc] mix-blend-difference">
             <Link href="/" className="text-sm">
               Quranbaev Muhammad
             </Link>
@@ -36,13 +36,13 @@ export default function RootLayout({
           <main className="w-full p-5 flex flex-col flex-auto">
             {children}
           </main>
-          <footer className="flex flex-col lg:flex-row gap-2 p-5">
+          <footer className="flex flex-col lg:flex-row gap-2 py-2.5 px-5 text-[#ffffffcc] mix-blend-difference">
             <div className="w-full block text-[10px]">
               Development for a better harmonious world.
             </div>
             <div className="w-full flex flex-row lg:flex-row-reverse justify-between">
               <div className="text-[10px] flex gap-3">
-                <Link target="_blank" href="https://instagram.com/mayklsss">
+                <Link target="_blank" href="https://instagram.com/mayklsss" className="hover:text-yellow-700">
                   Instagram
                 </Link>
                 <Link target="_blank" href="/">

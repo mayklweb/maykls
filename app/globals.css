@@ -2,10 +2,10 @@
 @import "tailwindcss";
 
 :root {
-  --background-color: #ede6da;
-  --foreground-color: #fff9e9;
-  --background: #fdf9f2;
-  --foreground: rgba(0, 0, 0, 0.7);
+  --background: #ede6da;
+  /* --foreground-color: #fff9e9; */
+  /* --background: #fdf9f2; */
+  --foreground: #000000b3;
   --primary: #002bba;
   --secondry: #fdf9f2;
   --font-mono: "Special Elite", monospace;
@@ -39,7 +39,7 @@ body {
   scroll-behavior: smooth;
   color: var(--foreground);
   font-family: var(--font-mono);
-  background-color: var(--background-color);
+  background-color: var(--background);
 }
 
 .wrapper {

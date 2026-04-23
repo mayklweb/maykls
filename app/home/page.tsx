@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="w-full h-full relative">
-      {/* <div className="w-full h-full flex flex-col lg:flex-row justify-center lg:items-center gap-10 text-white mix-blend-difference">
+      <div className="w-full h-full flex flex-col lg:flex-row justify-center lg:items-center gap-10">
         <div className="w-full lg:w-1/2 flex flex-col justify-center ">
           <div className="w-full ">
             <p className="text-xs">/Minimal Web, Development and Design.</p>
@@ -27,10 +27,10 @@ export default function Home() {
             </div>
             <div className="w-1/2 text-xs">
               <div className="flex gap-2 flex-col ">
-                <Link className="underline" href="/about-me">
+                <Link className="underline" title="About Me" href="/about-me">
                   About me
                 </Link>
-                <Link className="underline" href="/art-work">
+                <Link className="underline" title="Artwork" href="/artwork">
                   Artwork
                 </Link>
 
@@ -46,7 +46,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
 
       {/* <div className="w-full h-full absolute top-0 left-0 flex items-end justify-end pointer-events-none">
         <div className="w-75 h-25 bg-[#ede6da] p-2 flex gap-2.5">
@@ -65,20 +65,6 @@ export default function Home() {
           </div>
         </div>
       </div> */}
-
-      <div>
-        <Link href={'/home'} className="cursor-pointer absolute top-4/5 left-1/2 -translate-x-1/2 underline bg-background px-2 pt-1 leading-[120%]">Enter</Link>
-      </div>
-
-      <div className="fixed inset-0 -z-1">
-        <Image
-          src="/hero.jpg"
-          alt="Image"
-          width={3840}
-          height={2160}
-          className="block m-auto max-w-full h-full object-cover"
-        />
-      </div>
     </div>
   );
 }
