@@ -74,8 +74,8 @@ export default function Home() {
         <Image
           src="/hero.jpg"
           alt="Image"
-          width={3840}
-          height={2160}
+          width={1920}
+          height={1080}
           className="block m-auto max-w-full h-full object-cover"
         />
       </div>
